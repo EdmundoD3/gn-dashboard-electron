@@ -1,0 +1,43 @@
+.select-dropbox {
+  position: relative;
+}
+
+.select-container {
+  display: none;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+}
+
+.select-box {
+  position: relative;
+  background-color: blueviolet;
+  z-index: 200;
+}
+.select-box:hover {
+  color: aqua;
+}
+
+.select-dropbox-input:focus + .select-container {
+  display: flex;
+}
+
+.select-container:hover {
+  display: flex;
+}
+.select-mark {
+  color: bisque;
+  background-color: black;
+}
+.label-form{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.label-name {
+  width: 5.3rem;
+  text-overflow: ellipsis
+}
